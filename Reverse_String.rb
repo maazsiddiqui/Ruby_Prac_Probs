@@ -8,7 +8,6 @@
 def reverse(string)
     
     newstring = []
-    
     total_letters = string.length - 1
     
     while total_letters >= 0
@@ -20,31 +19,7 @@ def reverse(string)
     
 end
 
-puts('reverse("abc") == "cba": ' + (reverse("abc") == "cba").to_s)
-puts('reverse("a") == "a": ' + (reverse("a") == "a").to_s)
-puts('reverse("") == "": ' + (reverse("") == "").to_s)
-
-
-
-Web Answer
-
-
-def reverse(string)
-  reversed_string = ""
-
-  i = 0
-  while i < string.length
-    reversed_string = string[i] + reversed_string
-
-    i += 1
-  end
-
-  return reversed_string
-end
-
-# These are tests to check that your code is working. After writing
-# your solution, they should all print true.
-
+# Tests
 puts('reverse("abc") == "cba": ' + (reverse("abc") == "cba").to_s)
 puts('reverse("a") == "a": ' + (reverse("a") == "a").to_s)
 puts('reverse("") == "": ' + (reverse("") == "").to_s)
